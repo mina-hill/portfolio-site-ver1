@@ -1,36 +1,197 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  section {
-    padding: 40px 20px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  margin: 0;
+  background-color: #0f0f16;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar-left {
+  width: 160px;
+  background-color: #0f0f16;
+  border-right: 1px dashed #8e44ad;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 0;
+  position: relative;
+  z-index: 99;
+}
+.sidebar-container{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  width: 1px;
+  height: 100px;
+  background-color: #8e44ad;
+  margin-top: 20px;
+}
+.nav-icons {
+  display: flex;
+  flex-direction: column; /* make vertical */
+  gap: 25px;
+  align-items: center;
+  margin-top: 30px;
+}
+.nav-icons a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.nav-icons a:hover {
+  color: #8e44ad;
+  transform: scale(1.2);
+}
+
+.sidebar-right {
+  width: 160px;
+  background-color: #0f0f16;
+  border-left: 1px dashed #8e44ad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+  border: 1px dashed #8e44ad;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.dev-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1c1c2a;
+  border-bottom: 1px dashed #8e44ad;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.dev-nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 18px; /*14px*/
+  border-bottom: 1px dotted transparent;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+.dev-nav a:hover {
+  color: #8e44ad;
+  border-bottom: 1px dotted #8e44ad;
+}
+
+.dots-wrapper {
+  display: flex;
+  gap: 10px; /* space between columns */
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.dots-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between dots */
+}
+.dot {
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Decorative random boxes */
+.decor-box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #555;
+  opacity: 0.6;
+  /*animation: floatBox 6s infinite ease-in-out;*/
+}
+
+/* Optional: make them float a little for effect */
+/* @keyframes floatBox {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+} */
+
+.section{
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.hero-img {
+  width: 280px;
+  height: 280px;
+  margin-right: 20px;
+  margin-top: 20px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  /*border: 3px dashed #8e44ad;*/
+  /*box-shadow: 0 0 20px rgba(142, 68, 173, 0.4);*/
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #f5f5f5;
+}
+
+.hero-text p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #8e44ad;
+  border: 1px dashed #8e44ad;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #8e44ad;
+  color: #fff;
+}
+
+.highlight {
+  color: #C778DD;
+}

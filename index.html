@@ -1,49 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minahil Kashif - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minahil | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+      
+    <!-- Sidebar -->
+    <aside class="sidebar-left">
+      <!-- <div class="top-label">Home</div> -->
+      <div class="sidebar-container">
+        <div class="line"></div>
+        <div class="nav-icons">
+          <a href="#home"><img src="assets/icons/Github.svg" alt="Github"></a>
+          <a href="#projects"><img src="assets/icons/Email.svg" alt="Email"></a>
+          <a href="#settings"><img src="assets/icons/Figma.svg" alt="Figma"></a>
+        </div>
+      </div>
 
-  <!-- Header -->
-  <header>
-    <h1>Minahil Kashif</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+      <div class="dots-wrapper" style="top: 600px; left: 10px;">
+        <div class="dots-column">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots-column">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots-column">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Minahil, a student learning web development. Welcome to my portfolio.</p>
-  </section>
+      <div class="decor-box" style="width: 70px; height: 70px; top: 900px; left:-30px;"></div>    
+      
+    </aside>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-      <li>Project 1 - Coming Soon</li>
-      <li>Project 2 - Coming Soon</li>
-    </ul>
-  </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Rest of your page (header, hero, projects, etc) -->
+      <header class="dev-header">
+        <div class="logo">&gt; MK-Dev</div>
+        <!-- <div class="logo">> MK-Dev</div> -->
+        <nav class="dev-nav">
+          <a href="#home">#home</a>
+          <a href="#projects">#projects</a>
+          <a href="#about">#about-me</a>
+          <a href="#contact">#contacts</a>
+        </nav>
+      </header>
+    
+      <!-- Hero Section -->
+      <section id="hero" class="section">
+        <div class="hero-content">
+          <img src="assets/images/Image.png" alt="Your Photo" class="hero-img" />
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Minahil</span></h1>
+            <p>A passionate developer crafting clean and creative solutions.</p>
+            <a href="#projects" class="hero-btn">View My Work</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class="section">
+        <!-- short about yourself -->
+      </section>
+      
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <!-- project cards with links/images -->
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <!-- contact form or just your email -->
+      </section>
+      
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 Minahil Kashif. All rights reserved.</p>
+      </footer>
+    </main>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: minahilkashif1117@gmail.com</p>
-    <p>Phone: 0320-7751562</p>
-  </section>
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <p class="lang">HTML</p>
+      <p class="lang">CSS</p>
+      <p class="lang">JS</p>
+    </aside>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Minahil Kashif</p>
-  </footer>
+  </div>
 
 </body>
 </html>
