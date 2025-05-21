@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="decor-box" style="width: 70px; height: 70px; top: 900px; left:-30px;"></div>    
+      <!-- <div class="decor-box" style="width: 70px; height: 70px; top: 900px; left:-30px;"></div>     -->
       
     </aside>
 
@@ -67,24 +67,164 @@
           <div class="hero-text">
             <h1>Hi, I'm <span class="highlight">Minahil</span></h1>
             <p>A passionate developer crafting clean and creative solutions.</p>
-            <a href="#projects" class="hero-btn">View My Work</a>
+            <!-- <a href="#projects" class="hero-btn">View My Work</a> -->
+            <a href="#contacts" class="hero-btn">Contact Me!</a>
           </div>
         </div>
       </section>
       
       <!-- About Section -->
       <section id="about" class="section">
-        <!-- short about yourself -->
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>I'm a passionate developer with a strong foundation in both frontend and backend development. I specialize in creating user-friendly applications using C# and Windows Forms, while also exploring modern web technologies. My experience in database design and problem-solving allows me to build efficient and scalable solutions.</p>
+          
+          <div class="skills-container">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <h4>Frontend Development</h4>
+                <ul>
+                  <li>HTML & CSS</li>
+                  <li>Flutter (Basic)</li>
+                  <li>JavaScript (Learning)</li>
+                  <li>React (Learning)</li>
+                </ul>
+              </div>
+              <div class="skill-item">
+                <h4>Backend Development</h4>
+                <ul>
+                  <li>C++</li>
+                  <li>SQL & SQL Server</li>
+                  <li>C# with Windows Forms</li>
+                  <li>Database Design</li>
+                </ul>
+              </div>
+              <div class="skill-item">
+                <h4>Tools & Technologies</h4>
+                <ul>
+                  <li>Git & GitHub</li>
+                  <li>Visual Studio</li>
+                  <li>VS Code</li>
+                  <li>Figma</li>
+                  <li>Google Colab (Basic)</li>
+                </ul>
+              </div>
+              <div class="skill-item">
+                <h4>Other Skills</h4>
+                <ul>
+                  <li>UI/UX Basics</li>
+                  <li>Problem Solving</li>
+                  <li>Assembly Language (Basic)</li>
+                  <li>AI/ML (Basic)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       
       <!-- Projects Section -->
       <section id="projects" class="section">
-        <!-- project cards with links/images -->
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/project1.jpg" alt="Project 1">
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack e-commerce platform built with React and Node.js, featuring user authentication, product management, and payment integration.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Live</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/project2.jpg" alt="Project 2">
+            </div>
+            <div class="project-info">
+              <h3>Task Management App</h3>
+              <p>A collaborative task management application with real-time updates, task assignments, and progress tracking features.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Express</span>
+                <span>Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Live</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/images/project3.jpg" alt="Project 3">
+            </div>
+            <div class="project-info">
+              <h3>Weather Dashboard</h3>
+              <p>A weather application that provides real-time weather information and forecasts using OpenWeather API integration.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Live</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       
       <!-- Contact Section -->
       <section id="contact" class="section">
-        <!-- contact form or just your email -->
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>I'm currently available for freelance work or full-time positions. If you're interested in working together, please get in touch!</p>
+            <div class="social-links">
+              <a href="mailto:your.email@example.com" class="social-link">
+                <img src="assets/icons/Email.svg" alt="Email">
+                <span>your.email@example.com</span>
+              </a>
+              <a href="https://github.com/yourusername" class="social-link">
+                <img src="assets/icons/Github.svg" alt="GitHub">
+                <span>github.com/yourusername</span>
+              </a>
+              <a href="https://linkedin.com/in/yourusername" class="social-link">
+                <img src="assets/icons/LinkedIn.svg" alt="LinkedIn">
+                <span>linkedin.com/in/yourusername</span>
+              </a>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
       </section>
       
       <!-- Footer -->
@@ -95,9 +235,9 @@
 
     <!-- Right Sidebar -->
     <aside class="sidebar-right">
-      <p class="lang">HTML</p>
+      <!-- <p class="lang">HTML</p>
       <p class="lang">CSS</p>
-      <p class="lang">JS</p>
+      <p class="lang">JS</p> -->
     </aside>
 
   </div>
